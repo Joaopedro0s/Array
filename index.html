@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário Y2K</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"> <br><br>
-        
-        <label for="idade">Idade:</label>
-        <input type="text" id="idade" name="idade"><br><br>
+<div class="bloco">
 
-        <label for="curso">Curso:</label>
-        <input type="text" id="curso" name="curso"><br><br>
+    <div class="container">
+        <h1>FORMULÁRIO ALUNOS Y2K</h1>
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
 
-        <input type="submit" value="Salvar"><br><br>
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" required><br><br>
 
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required><br><br>
+
+            <input type="submit" value="Salvar"><br><br>
+        </form>
+    </div>
+
+    <div class="container2">
         <h3>Alunos cadastrados:</h3>
         <ul id="listaAlunos"></ul>
-    </form>
-    
+        <button type="button" id="exportar">Exportar para JSON</button>
+    </div>
 
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

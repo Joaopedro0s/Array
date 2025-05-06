@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #00ffff;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+    background: radial-gradient(circle at center, #000000 30%, #1a1a1a 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff, 0 0 16px #00ffff;
+    margin-bottom: 30px;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    padding: 0 80px;
+    flex-wrap: wrap;
+}
+
+.container, .container2 {
+    flex: 1;
+    max-width: 400px;
+    background: linear-gradient(145deg, #222, #000);
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff, 0 0 40px #ff00ff inset;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.container label,
+.container2 h3 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    background-color: #111;
+    border: 1px solid #ff00ff;
+    color: #0ff;
+    font-family: 'Bangers', cursive;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ff00ff;
+}
+
+input[type="submit"],
+button {
+    background-color: #ff00ff;
+    color: #000;
+    font-family: 'Press Start 2P', cursive;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #00ffff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff inset;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    transform: scale(1.05);
+    background-color: #00ffff;
+    color: #000;
+}
+
+#listaAlunos {
+    font-family: 'Russo One', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 20px;
+    text-shadow: 0 0 5px #0ff;
+}
